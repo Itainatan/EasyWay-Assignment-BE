@@ -1,5 +1,4 @@
 import { RequestHandler } from "express";
-import Joi from "joi";
 import fs from "fs";
 import { logger } from "../utils";
 import { DATA_PATH_JSON } from "../consts";
