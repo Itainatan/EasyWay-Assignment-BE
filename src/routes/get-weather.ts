@@ -37,7 +37,7 @@ const deleteExchange: RequestHandler = async (req, res) => {
 
     logger.info("got weather for the city");
 
-    await fs.promises.writeFile(DATA_PATH_JSON, JSON.stringify(dataToReturn));
+    await fs.promises.appendFile(DATA_PATH_JSON, JSON.stringify(dataToReturn));
 
     logger.info("finish save in database");
 
